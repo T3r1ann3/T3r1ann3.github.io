@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Terianne's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="project3.css">
+
+</head>
+<!-- NOTE: header -->
+<body>
+<div class="name p-5 text-center">
+  <h1>Terianne Wilson's Portfolio</h1>
+  <p class="sub-header"><i>if not now, when?</i></p>
+</div>
+<!-- NOTE: navigation bar -->
+<nav class="navbar sticky-top navbar-expand-sm">
+  <!-- NOTE: hamburger button to control collabsible tab -->
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseTab" aria-control="collapseTab" aria-expanded="false"><span class="navbar-toggler-icon"></span>
+ </button>
+  <div class="collapse navbar-collapse" id="collapseTab">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#home">About Terianne</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Web Technology Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#activities">Class Activities</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Terianne</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- NOTE: body content -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- NOTE: intro image -->
+    <div class=" introImage-div col-md-5 col-lg-4">
+      <h2 class="subtitle">Terianne Wilson</h2>
+      <div class="introImage">
+        <img src="myPhoto.jpg" alt="image of avatar" title="Terianne Wilson">
+      </div>
+      <p class="major">Future UX/UI Designer</p>
+      </div>
+      <!-- NOTE: intro paragraph -->
+    <div class=" introPara col-md-7 col-lg-8 mt-5">
+      <h2 class="introText">A little bit about me:</h2>
+      <img src="ux.jpg" alt="image of computer set up" title="Future computer setup">
+
+      <p class="introText" >I am currently an IIT (Internet and Information Technology) major at Queensborough Community College. This major is part of the Department of Engineering. After recieving my Associates in IIT, I would like to attend Long Island University (LIU) in hopes of recieving my B.F.A. in Digital Art and Design. In order to prepare for a career in UX/UI design I plan on participating in summer internships to ensure a sucessful transition from college to working life. </p>
+
+      <br>
+
+      <!-- NOTE: slideshow -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- NOTE: slide 1 -->
+          <div class="carousel-item active carousel">
+            <img class="d-block w-100" src="design.jpg" alt="First slide">
+              <h2 class="slideshowText1" >Web Design:<br> HTML, CSS, Bootstrap </h2>
+          </div>
+          <!-- NOTE: slide 2 -->
+          <div class="carousel-item carousel">
+            <img class="d-block w-100" src="html.jpg" alt="Second slide">
+              <h2 class="slideshowText1" >My first project was <br> made using only HTML</h2>
+                <button type="button" class="btn active btn-float btn1">Project 1</button>
+          </div>
+          <!-- NOTE: slide 3 -->
+          <div class="carousel-item carousel">
+            <img class="d-block w-100" src="css.png" alt="Third slide">
+              <h2 class="slideshowText2" >My second project was <br> made using both HTML and CSS</h2>
+                <button type="button" class="btn active btn-float btn1">Project 2</button>
+          </div>
+          <!-- NOTE: slide 4 -->
+          <div class="carousel-item carousel">
+            <img class="d-block w-100" src="bootstrap.png" alt="Fourth slide">
+              <h2 class="slideshowText3" >This webpage is my third<br> project made using HTML, CSS and Bootstrap</h2>
+                <button type="button" class="btn active btn-float btn1">Project 3</button>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+</div>
+
+<!-- NOTE: Modal Windows -->
+<br>
+<h2>Take a look at my web projects here ( ﾉ ﾟｰﾟ)ﾉ</h2>
+
+
+<!-- NOTE: footer -->
+<br>
+<footer class="footer-distributed">
+    <!-- NOTE: social media -->
+
+      <div class=" footer-right social col-lg-6 mt-5">
+        <a href="https://discordapp.com/users/806349233002250241/" target="_blank"> <img src="discord.png" alt="discord icon"> </a>
+      </div>
+
+      <div class=" footer-right social col-lg-6 mt-5">
+        <a href="https://www.instagram.com/t3r1ann3/?hl=en" target="_blank"> <img src="insta.png" alt="instagram icon"> </a>
+      </div>
+
+      <!-- NOTE:links  -->
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="home" href="#">Home</a>
+
+					<a href="mailto: terianne.wilson52@student.qcc.cuny.edu" target="_blank">Email Me</a>
+
+					<a href="tel:5164506863">Call/Text Me</a>
+
+					<a href="https://www.qcc.cuny.edu/" target="_blank">Current School</a>
+
+					<a href="https://www.google.com/maps/place/New+York,+NY/@40.6971494,-74.2598665,10z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728" target="_blank">Location</a>
+
+				</p>
+        <!-- NOTE: copyright -->
+				<p>Terianne Wilson Portfolio @ 2022 by Terianne Wilson <br> This webpage is an accumulation of projects and web activities completed in a web design class at QCC.</p>
+			</div>
+
+		</footer>
+
+</body>
+</html>

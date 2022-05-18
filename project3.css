@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+:root{
+  --primary:#004d40;
+  --primaryDark:#00251a;
+  --primaryLight:#39796b;
+  --secondary:#ff9e80;
+  --secondaryDark:#c96f53;
+  --secondaryLight:#ffd0b0;
+}
+.name{
+  font-family: "bell mt";
+  font-size: 4em;
+  background-color: var(--primary);
+  color: var(--primaryLight);
+}
+.sub-header{
+  font-size: 0.4em;
+}
+/* NOTE: navigation */
+.navbar{
+  background-color: var(--secondaryDark);
+  opacity: 0.8;
+  padding-left: 1em;
+  font-family: "bell mt";
+  font-weight:bold;
+}
+.nav-link{
+  color: var(--secondaryLight);
+}
+/* NOTE: intro section */
+.subtitle{
+  font-family: "bell mt";
+  text-align: center;
+}
+.introImage, .introPara{
+  justify-content: center;
+}
+.introImage img{
+  width: 280px;
+  height: 470px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  padding: 6px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.major{
+  text-align: center;
+  display: block;
+}
+.introPara img{
+  width: 230px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  padding: 6px;
+  display: flex;
+  float: left;
+  margin: 0px 8px 0px 0px;
+}
+.introText{
+  font-family: "bell mt";
+  text-align: left;
+}
+/* NOTE: slideshow */
+.carousel{
+  min-height: 235px;
+  max-width: 500px;
+  position: relative;
+}
+.carousel-item img{
+  height: 235px;
+  width: 500px;
+}
+.slideshowText1, .slideshowText2, .slideshowText3 {
+  text-align:center;
+  position: absolute;
+  font-family:"bell mt";
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 3px;
+  opacity: 0.75;
+  border-radius: 10px;
+}
+.slideshowText1{
+  top:16px;
+  left: 145px;
+  color: var(--secondaryDark);
+  background-color: var(--secondaryLight);
+}
+.slideshowText2{
+  top:16px;
+  left: 100px;
+  color: var(--secondaryDark);
+  background-color: var(--secondaryLight);
+}
+.slideshowText3{
+  top:16px;
+  left: 40px;
+  border: red 10px;
+  color: var(--secondaryDark);
+  background-color: var(--secondaryLight);
+}
+.btn1{
+  text-align:left;
+  position: absolute;
+  bottom:40px;
+  left: 210px;
+  color: var(--secondaryDark);
+  background-color: var(--secondaryLight);
+  font-family:"bell mt";
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* NOTE: footer */
+.footer-distributed {
+  background-color: var(--primary);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: "bell mt";
+  font-size: 16px;
+  padding: 45px 50px;
+}
+
+/* NOTE: footer copyright */
+.footer-distributed .footer-left p {
+  color: var(--primaryLight);
+  font-size: 18px;
+}
+/* NOTE: footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: var(--secondary);
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "~";
+  font-size: 20px;
+  left: 0;
+  color: var(--secondaryDark);
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .home:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 120px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.2); -webkit-transform:scale(1.2);}
+
+.footer-distributed p.footer-links a:hover{
+color: var(--primaryDark);}
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}

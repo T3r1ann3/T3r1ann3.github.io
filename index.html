@@ -10,15 +10,15 @@
 
 </head>
 <!-- NOTE: header -->
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-site">
 <div class="name p-5 text-center">
   <h1>Terianne Wilson's Portfolio</h1>
-  <p class="sub-header"><i>if not now, when?</i></p>
+  <p class="name-subtitle"><i>if not now, when?</i></p>
 </div>
 <!-- NOTE: navigation bar -->
-<nav class="navbar sticky-top navbar-expand-sm">
+<nav id="#navbar-site"class="navbar sticky-top navbar-expand-sm">
   <!-- NOTE: hamburger button to control collabsible tab -->
-  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseTab" aria-control="collapseTab" aria-expanded="false"><span class="navbar-toggler-icon"></span>
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseTab" aria-control="collapseTab" aria-expanded="false"><span class="navbar-toggler-icon">🔗</span>
  </button>
   <div class="collapse navbar-collapse" id="collapseTab">
     <ul class="navbar-nav">
@@ -45,7 +45,7 @@
   <div class="row">
     <!-- NOTE: intro image -->
     <div class=" introImage-div col-md-5 col-lg-4">
-      <h2 class="subtitle">Terianne Wilson</h2>
+      <h2 id="home" class="subtitle">Terianne Wilson</h2>
       <div class="introImage">
         <img src="myPhoto.jpg" alt="image of avatar" title="Terianne Wilson">
       </div>
@@ -61,6 +61,7 @@
       <br>
 
       <!-- NOTE: slideshow -->
+      <br>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
           <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -105,21 +106,105 @@
     </div>
 </div>
 
-<!-- NOTE: Modal Windows -->
+<!-- NOTE: Class Projects -->
 <br>
-<h2>Take a look at my web projects here ( ﾉ ﾟｰﾟ)ﾉ</h2>
+<h2 id="projects" class="header text-center">Web Projects (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h2>
+
+<!-- NOTE: cards-->
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card-container c1">
+      <div class="card-body">
+        <div class="grow-filter fade-filter">
+          <img class="cardpic" src="project1.jpg" alt="a photo of a man holding the Jamaican flag" data-bs-toggle="modal" data-bs-target="#project1">
+        </div>
+        <h4 class="card-title">Project 1</h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card-container c2">
+      <div class="card-body">
+        <div class="grow-filter fade-filter">
+        <img class="cardpic" src="project2.jpg" alt="a photo of 2 hands holding a flower" data-bs-toggle="modal" data-bs-target="#project2">
+        </div>
+        <h4 class="card-title">Subtle Racism in Catholic School</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTE: modal windows -->
+
+<!-- NOTE: modal window 1 -->
+<div class="modal" id="project2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <!-- NOTE: modal header -->
+        <div class="modal-header">
+          <div class="modal-title">
+            <p class="modal-text1">HTML and CSS Project</p>
+          </div>
+          <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+        </div>
+        <!-- NOTE: modal body -->
+        <div class="modal-body">
+          <img class="modal-img" src="project2.jpg" alt="photo of 2 hands holding a flower" title="Unity of race" class="float-start" style="width:70%; padding:0.1em;">
+            <div style="text-align:center">
+              <h5 class="modal-text2" >Subtle Racism in Catholic School</h5>
+              <p class="modal-text3">This project is part of a Common Read Assignment. The book this project is  by is "An American Lyric" by Claudia Rankine. Inspired by one of the chapters, I based my project on my experience in a predominetly white school I attended.</p>
+              <a href="https://t3r1ann3.github.io/project2/" target="_blank" class="modal-textlink">Visit My Project Here</a>
+            </div>
+        </div>
+        <!-- NOTE: modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn modal-btn-text btn-click" data-bs-dismiss="modal">Back to website</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- NOTE: modal window 2 -->
+<div class="modal" id="project1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <!-- NOTE: modal header -->
+        <div class="modal-header">
+          <div class="modal-title">
+            <p class="modal-text1">HTML ONLY Project</p>
+          </div>
+          <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+        </div>
+        <!-- NOTE: modal body -->
+        <div class="modal-body">
+          <img class="modal-img" src="project1.jpg" alt="photo of a man holding a jamaican flag" title="Jamaica" class="float-start" style="width:70%; padding:0.1em;">
+            <div style="text-align:center">
+              <h5 class="modal-text2" >Travel to Jamaica</h5>
+              <p class="modal-text3">This project is about a place I love and want to inform more people about. I discuss places to visit and what food visitors should eat. Learn more about Jamaica on my website.</p>
+              <a href="https://t3r1ann3.github.io/project-1/" target="_blank" class="modal-textlink" >Visit My Project Here</a>
+            </div>
+        </div>
+        <!-- NOTE: modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn modal-btn-text btn-click" data-bs-dismiss="modal">Back to website</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- NOTE: class activities -->
+<br>
+<h2 id="activities" class="header text-center" >Web Activities (∩^o^)⊃━☆</h2>
 
 
 <!-- NOTE: footer -->
 <br>
-<footer class="footer-distributed">
+<footer  id="contact" class="footer-distributed">
     <!-- NOTE: social media -->
 
-      <div class=" footer-right social col-lg-6 mt-5">
+      <div class=" footer-right social col-lg-6 mt-5 px-3">
         <a href="https://discordapp.com/users/806349233002250241/" target="_blank"> <img src="discord.png" alt="discord icon"> </a>
       </div>
 
-      <div class=" footer-right social col-lg-6 mt-5">
+      <div class=" footer-right social col-lg-6 mt-5 px-3">
         <a href="https://www.instagram.com/t3r1ann3/?hl=en" target="_blank"> <img src="insta.png" alt="instagram icon"> </a>
       </div>
 

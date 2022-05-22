@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primaryColor:#b3e5fc;
+  --primaryLight:#e6ffff;
+  --primaryDark:#82b3c9;
+}
+
+/*title*/
+.title{
+  color: var(--primaryColor);
+  text-align: center;
+  font-size: 5em;
+  text-shadow: 2px 2px 5px var(--primaryDark)
+}
+/*navigation*/
+.navigation{
+  background-color: var(--primaryColor)
+}
+.navigation a{
+  display: inline-block;
+  width: 33.1%;
+  text-align: center;
+  padding: 1em 0px;
+  background-color: var(--primaryDark);
+  text-decoration: none;
+  color: var(--primaryLight);
+  font-size: 1.2em;
+}
+.navigation a:hover{
+background-color: var(--primaryLight);
+ color: var(--primaryDark);
+ text-decoration: underline;
+}
+/* cards  */
+.cardContainer{
+  border: red solid;
+  display: inline-block;
+}
+.card{
+  background-color: var(--primaryColor);
+  text-shadow: 2px 2px 5px var(--primaryDark);
+  width: 20%;
+  margin: 2%;
+  border: solid blue;
+  float: left;
+}
+.imgCard{
+  width: 100%
+}
+.titleCard{
+  text-align: center;
+}
+.pCard{
+  padding: 0.5em;
+  height: 12em;
+  overflow: hidden;
+}
+.pCredits{
+  padding: 0.5em;
+  font-size: 0.8em;
+  font-style: italic;
+}
+.footerInfo{
+  text-align: center;
+  margin-top: ridge 1px var(--primaryDark);
+  background-color: var(--primaryColor);
+  padding: 1em 0em;
+}
+/* --large resolution-- */
+@media only screen and (max-width:1350px){
+  body{
+    background-color: lightgreen;
+  }
+  .pcard{
+    height: 15em;
+  }
+}
+/* medium resolution for tablet */
+@media only screen and (max-width:1168px){
+  body{
+    background-color: blue;
+  }
+  .card{
+    width:40%;
+    margin-left: 6%;
+  }
+  .pcard{
+    height: 11em;
+  }
+}

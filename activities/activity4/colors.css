@@ -1,0 +1,289 @@
+.title{
+  background-color: rgb(231,147,122);
+  text-align: center;
+  color: beige;
+  padding: 12px 0px;
+}
+
+span{
+  font-size: 75px;
+  font-weight: 550;
+}
+
+.g1, .g4{
+  color: rgb(66,133,244);
+}
+
+.g2, .g6{
+  color: rgb(234,67,53);
+}
+
+.g3{
+  color: rgb(251,188,5);
+}
+
+.g5{
+  color: rgb(52,168,83);
+}
+
+.primary, .light, .dark{
+  background-color: #a581ce;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.light{
+  background-color: #d7b1ff;
+}
+
+.dark{
+  background-color:#75549d;
+}
+
+.fig1{
+  width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.im1_fig1{
+  width: 100%;
+}
+.p_fig1{
+  position: absolute;
+  background-color: rgba(10,10,10,0.6);
+  color: lightgray;
+  bottom:10%;
+  left: 10%;
+  right: 10%;
+  padding: 12px;
+  font-size: 30px;
+  text-align:center;
+}
+
+/* NOTE: sticky position */
+.stickyTOP{
+  background-color: rgba(231,147,122,0.5);
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  top: 0px;
+}
+/* NOTE: hero image */
+.heroImage{
+  background-image: linear-gradient(rgba(234,67,53,0.5),rgba(222,181,118,0.5)), url("im1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 500px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.heroTitle{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  text-align: center;
+  left: 35%;
+  right: 35%;
+}
+.heroP{
+  position: absolute;
+  width: 50%;
+  left: 10%;
+  top: 5%;
+  font-size: 40px;
+  font-family: "Edwardian Script ITC";
+}
+.heroP2{
+  position: absolute;
+  width: 50%;
+  right: 2%;
+  bottom:1%;
+  font-size: 40px;
+  font-family: "Edwardian Script ITC";
+}
+
+/* NOTE: filters */
+.filterContainer{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter1, .filter2, .filter3{
+  width: 220px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+figcaption{
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.filter1{
+  filter: blur(2px);
+}
+
+.filter2{
+  filter: sepia(100%);
+}
+
+.filter3{
+  filter: invert(100%);
+}
+
+/* NOTE: Activity 4*/
+
+.japanHead{
+  text-align: center;
+  background-color: rgba(235,149,33, 0.2);
+  color: rgba(53, 174, 215, 0.8);
+  padding: 12px 0px;
+  font-family: "Matura MT Script Capitals"
+}
+
+.japanpics{
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.osakafig, .towerfig, .fujifig{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 350px;
+  height: 550px;
+  padding: 5px;
+  position: relative;
+  margin: auto;
+}
+
+.osakafig{
+  background-image: linear-gradient(rgba(235, 149, 33, 0.5), rgba(53, 174, 215, 0.3)), url(castle.jpg);
+}
+
+.towerfig{
+  background-image: url(tower.jpg);
+  filter: blur(0.5px);
+}
+
+.fujifig{
+  background-image: url(fuji.jpg);
+  filter: invert(20%);
+}
+
+.osakaTitle{
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  bottom: 40%;
+  left: 20%;
+  right: 20%;
+  font-size: 25px;
+  font-family: "Matura MT Script Capitals";
+  color: rgb(53, 174, 215);
+}
+
+.osakaP1{
+  position: absolute;
+  width: 25%;
+  left: 10%;
+  top: 5%;
+  font-size: 15px;
+  font-family: "Matura MT Script Capitals";
+}
+
+.osakaP2{
+  position: absolute;
+  width: 70%;
+  left: 30%;
+  top: 25%;
+  font-size: 15px;
+  font-family: "Matura MT Script Capitals";
+}
+
+.osakaP3{
+  position: absolute;
+  width: 60%;
+  right: 15%;
+  bottom: 15%;
+  font-size: 15px;
+  font-family: "Matura MT Script Capitals";
+}
+
+.fujiTitle{
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  bottom: 60%;
+  left: 20%;
+  right: 20%;
+  font-size: 25px;
+  font-family: "Matura MT Script Capitals";
+  color: rgb(53, 174, 215);
+}
+
+.fujiText{
+  background-color: rgba(255,255,255, 0.8);
+  position: absolute;
+  bottom: 17%;
+  font-size: 18px;
+  color: rgba(53, 174, 215, 0.9) ;
+  font-family: "Matura MT Script Capitals";
+  font-weight: lighter;
+  text-align: center;
+  border: groove 6px black;
+  margin-right: 4%;
+  margin-left: 3%;
+  padding: 2px 5px 2px 5px;
+}
+
+.towerTitle{
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  left: 20%;
+  right: 20%;
+  font-size: 25px;
+  font-family: "Matura MT Script Capitals";
+  color: rgba(53, 174, 215, 0.8);
+  text-shadow: 2px 2px #09090A;
+}
+
+.towerText{
+  position: absolute;
+  top: 30%;
+  bottom: 15%;
+  left: 12%;
+  right: 12%;
+  font-size: 18px;
+  font-family: "Matura MT Script Capitals";
+  color: rgba(235, 149, 33, 0.8);
+  font-weight: lighter;
+  text-align: center;
+  text-shadow: 2px 2px #09090A;
+  background-color: rgba(53, 174, 215, 0.6);
+  box-shadow: 1px 1px 50px;
+  padding: 5px 3px 5px 3px;
+}
+
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  border-top: ridge 2px gray;
+  padding: 15px;
+}

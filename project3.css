@@ -261,18 +261,18 @@ transition: 1s ease;
 .cardtext-a{
 margin-left: 5%;
 margin-right: 5%;
-padding-left: 5px;
-padding-right: 5px;
+padding-left: 1%;
+padding-right: 1%;
 text-align: justify;
 }
 .cardtext-a1{
-  margin-left: 20%;
+  margin-left: 10%;
 }
 .cardtext-a2{
-  margin-left: 24%;
+  margin-left: 10%;
 }
 .cardtext-a3{
-  margin-left: 15%;
+  margin-left: 10%;
 }
 .cardtext-a, .cardtext-a1, .cardtext-a2, .cardtext-a3{
   margin-top: 4%;
